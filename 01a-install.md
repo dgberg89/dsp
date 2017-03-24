@@ -55,7 +55,7 @@ I started my Python training with 2.7 but have been using 3 for a few weeks now 
 
 >> To check what version of Python is on a machine, type python --version from a Command Prompt in Terminal (or whatever
 the appropriate command window is for the given operating system).  If Python3 is also on the machine,
-you need to tyoe python3 --version to see which version is installed.  On my machine, both versions are installed.
+you need to type python3 --version to see which version is installed.  On my machine, both versions are installed.
 
  
 
