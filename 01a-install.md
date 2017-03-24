@@ -48,11 +48,14 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3.  Python 2.7 came pre-installed on the machine but I downloaded Python 3.6 since that is what is recommended.
+I started my Python training with 2.7 but have been using 3 for a few weeks now so am getting comfortable with the differences.
 
 ###Q2. Which Python Version Installed   
 
-How can you check the version of Python installed if you happen to be on an unfamiliar computer?
+To check what version of Python is on a machine, type python --version from a Command Prompt in Terminal (or whatever
+the appropriate command window is for the given operating system).  If Python3 is also on the machine,
+you need to tyoe python3 --version to see which version is installed.  On my machine, both versions are installed.
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
