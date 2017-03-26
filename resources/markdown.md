@@ -171,8 +171,14 @@ What is the most installed language in the world?
 - Spark
 - Javascript
 
+<<<<<<< HEAD
 >>The most installed language in the world is **Javascript**.  From this list, the second most installed language (3rd overall) is *Python*.  Check out this link to see the entire list [Top 10 Most Popular Programming Languages](https://www.techworm.net/2016/09/top-10-popular-programming-languages.github.html "Top 10 List")
 
+=======
+The most installed computer language in the world is **Javascript**.  
+From this list, the next most installed (#3 overall) would be *Python*.  
+See this link [Top 10 Most Popular Programming Languages] for the entire list.(https://www.techworm.net/2016/09/top-10-popular-programming-languages-github.html)
+>>>>>>> 529a66bfd6fd729860ab6fb81a4fd95256239520
 
 ***
 
