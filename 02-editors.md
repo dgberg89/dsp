@@ -82,7 +82,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
 >> I will use **Nano**.  I researched Emacs and Vim but those seem a bit too complex at this point in terms of the steep learning curve.
->> Nano seems to be much simpler (and free!:smileyface:), which is important at the beginning of the course.  I hope to learn emacs and vin along the way, however, given their increased functionality.
+>> Nano seems to be much simpler (and free!:smiley:), which is important at the beginning of the course.  I hope to learn emacs and vin along the way, however, given their increased functionality.
 
 --
 
@@ -90,6 +90,27 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> 
+>> I will use **Atom** as my Graphical Editor.  I already had a version of Kimodo Edit 10 on my machine but after reading initial research it seemed that Sublime and Atom were better in terms of functionality and efficiency.
+>> As I've never used Atom or Sublime before, both reviews seemed great.  Atom, however, is completely free (vs an eventual license needed in Sublime) and is also interwoven with Github, which would seem to have a lot of advantages seeing that we'll be using Github a lot.  Also, as Atom is a more recent editor, it seems the creators wanted to find a combination of the positives between Sublime and Emacs/Vin.  So why not give it a shot!
+>> Some interesting features of Atom are:
+
+>> +Hosted by Github
+>> +Open Source (not important for me now but maybe down the line)
+>> +Easy file manipulation through tree view
+>> +Package Installer, Themes, and Settings very easy to adjust from the Home screen (no need to edit config files or other files beneath the hood)
+>> +Seems to have more efficient access to web use and editing (not sure on this as I'm new to it, but my research reflected that)
+>>
+>> Some useful keyboard shortcuts are:
+
+>> +shift-cmd-p.....opens and closes the command palette where you can access Search for the entire Application
+>> +cmd-,...........brings up Settings window
+>> +cmd-p...........brings up window to search and open files
+>> +ctrl-shift-m....allows preview in Markdown format
+>> +cmd-\...........toggles File Tree View
+>> cmd-n............new file
+>> cmd-s............save current file
+>>
+>> Atom is customizable through the Command Palette.  Settings and Themes can be added and edited very easily, and new packages can be easily installed.  One reason I liked Atom is that the interface for customization seems easier for beginner users.
+ 
 
  
