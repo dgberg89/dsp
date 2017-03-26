@@ -191,7 +191,7 @@ What is the distribution of t-squared?
  * Beta
  * Bivariate Normal
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>The distribution of t-squared is **Chi-squared**.
 
 ---
 
@@ -202,7 +202,8 @@ In the scikit-learn's official source repo, about how many issues are outstandin
 3. 700  
 4. 7000  
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>The correct answer is *3. 700*.
+>>From the link [Scikit-Learn](https://github.com/scikit-learn/scikit-learn "Scikit-learn official source repo"), there are actually **797** outstanding issues.
 
 ---
 
