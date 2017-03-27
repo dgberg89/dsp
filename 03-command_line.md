@@ -19,7 +19,18 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> ###**Cheat Sheet of Commands**
+
+>> +pwd - show working directory path
+>> +mkdir - create a new directory
+>> +rm -r - remove a directory and all associated child directories
+>> +touch 'samplefile.txt' - creates a new file with name 'samplefile.txt' in the wqorking directory
+>> +rm - delete/remove a file
+>> +mv - move or rename a file (for move, type mv 'file' 'dir', to rename type mv 'file' 'new filename')
+>> ls -a - list hidden files in the working directory
+>> +cp - copy a fiule from one directory to another (syntax is cp 'file' 'directory to copy it to')
+>> +cd - change directory (cd and then path to dir OR cd / for home directory OR cd .. to move back one directory)
+>> +alias - allows you to create keyboard shortcuts for commands 
 
 ---
 
@@ -34,7 +45,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> +ls - lists all files in the current  working directory
+>> +ls -a - lists all files in the working directory INCLUDING hidden files
+>> +ls -l - lists all files in the working directory in long version (added details for each file)
+>> +ls -lh - lists files in long version with human readable format (for sizes)
+>> +ls -lah - same as ls -lh, only hidden files also included
+>> ls -t - lists files in order of the last time they were modified
+>> ls -Glp - lists files in long formats without Group names and with a / at the end of each directory
 
 ---
 
@@ -42,15 +59,19 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> +ls -C - lists files and directories in column format
+>> +ls -R - lists all directories and subdirectories
+>> +ls -1 - lists files and directories on a single line
+>> +ls -S - lists files sorted by size
+>> +ls -m - lists files with commas separating entries
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> From what I understand, 'xargs' is a command line command that helps run commands that are too long or have too many arguments.  It can execute commands that don't accept standard input (i.e echo or an argument piped in using |) with the arguments from standard input.
+>> A good example I found online is 'ls | xargs cat'.  This line pipes the list command to xargs which then runs the following stdin command (cat) on all of the files in the list.  When I ran this in terminal, every line from every file from the dsp directory was printed to the Terminal.    
 
  
 
