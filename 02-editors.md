@@ -95,21 +95,21 @@ What graphical editor will you use? How did you make your decision? What are som
 
 >> Some interesting features of Atom are:
 
-+ Hosted by Github
-+ Open Source (not important for me now but maybe down the line)
-+ Easy file manipulation through tree view
-+ Package Installer, Themes, and Settings very easy to adjust from the Home screen (no need to edit config files or other files beneath the hood)
-+ Seems to have more efficient access to web use and editing (not sure on this as I'm new to it, but my research reflected that)
+>> + Hosted by Github
+>> + Open Source (not important for me now but maybe down the line)
+>> + Easy file manipulation through tree view
+>> + Package Installer, Themes, and Settings very easy to adjust from the Home screen (no need to edit config files or other files beneath the hood)
+>> + Seems to have more efficient access to web use and editing (not sure on this as I'm new to it, but my research reflected that)
 
 >> Some useful keyboard shortcuts are:
 
-- shift-cmd-p.....opens and closes the command palette where you can access Search for the entire Application
-- cmd-,...........brings up Settings window
-- cmd-p...........brings up window to search and open files
-- ctrl-shift-m....allows preview in Markdown format
-- cmd-\...........toggles File Tree View
-- cmd-n............new file
-- cmd-s............save current file
+>> - shift-cmd-p.....opens and closes the command palette where you can access Search for the entire Application
+>> - cmd-,...........brings up Settings window
+>> - cmd-p...........brings up window to search and open files
+>> - ctrl-shift-m....allows preview in Markdown format
+>> - cmd-\...........toggles File Tree View
+>> - cmd-n............new file
+>> - cmd-s............save current file
 
 >> Atom is customizable through the Command Palette.  Settings and Themes can be added and edited easily, and new packages can be readily installed.  One reason I liked Atom is that the interface for customization seems simpler for beginner users.
  
