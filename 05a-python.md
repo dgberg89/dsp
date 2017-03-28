@@ -21,16 +21,34 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> Lists and sets are both stores of value but lists can have the same values repeatedly while sets cannot:
+
 >> + Example of list:  list_numbers = [1, 2, 3, 3, 4, 4, 5, 5, 6]
 >> + Example of set:    set_numbers = [1, 2, 3, 4, 5, 6]
+>> + Using python code to turn list_numbers into a set would be set_numbers = set(list_numbers) and we would get the above output of the single numbers and not the duplicates from list_numbers.
 
+>> Some other differences are lists (use []) are ordered and can be sorted while sets (use {}) are unordered.  Sets are also hashable while lists are not.
+
+>> That last point is why sets are much faster at finding elements than lists.  To find an element in a list, a loop needs to look at the entire list, which could take a long time the bigger the list gets.  Sets use hash tables, however, so that finding an element is much quicker.  The best example I saw on this was from this [StackOverflow link](http://stackoverflow.com/questions/8929284/what-makes-sets-faster-than-lists-in-python) where the question was what if we had to find a lost sock.  If you had to look through your entire closet (list) it would take a long time but if you knew the sock was in the 3rd drawer of the closet (set), it would be much faster.
 ---
 
 ### Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is a 1-line function in Python that can replace or be used instead of the more common way of writing functions using *def()*. As it is a shorter way to write a function, this can be useful when the function is relatively simple or it is only going to be used once (1-line fucntion for 1-off occurrence).  An example could be multiplying two numbers together:
+>> + A function using *def* would be: 
+>> 1. def multiply(x, y):
+>> 2. return x * y
+
+>> + This same fucntion could be written on one line as:
+>> 1. lambda x,y:  x * y
+
+>> Another example would be trying to sort lists or dictionaries using the *sorted* function.  If I have a list containing three tuples of baseball teams and the last year they won the World Series, here is how I would sort them:
+>> + baseball_teams = [('Baltimore', 'Orioles', '1983'), ('Chicago', 'Cubs', '2017'),
+                       ('Oakland', 'A\'s', '1989')]
+     sorted(baseball_teams, key = lambda x:x[1])
+     
+>> The *sorted* function asks for the sequence to sort (in this case the list baseball_teams) and then assigns the key with which to sort by using *lambda*.  In this case, the second part of the lambda function asks for the 1-index or 2nd value in the tuple to sort by.  We could make that number 0 or 2 and the 1st and 3rd would become the sort keys respectively.
 
 ---
 
