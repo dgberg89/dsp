@@ -56,7 +56,28 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are efficient ways to create lists using a *for loop* to iterate over a group and create a list for whatever the condition is.  A simple example would be:
+
+>> + list = [x for x in range(101) if x % 5 == 0]
+
+>> This line says iterate over every number in the range 0-100 and create a list of all numbers divisible by 5.  You can also do this using the *map* and *filter* functions, which have a different format of first calling a function and then a sequence on which to apply the function.  Using the example from above with *map* and *filter*:
+
+>> 1. y = range(101)
+>> 2. list_map = map(lambda z: z % 5 == 0, y)
+
+>> In this example, I am using lambda to create the 1-line function of finding items in the sequence 'y' that are divisible by 5. *Filter* is used in a similar way for map, only instead of running the sequence through a function, you are filtering the sequence for a unique set of values.  Below is the expression we'd use for filter in this example, filtering all numbers from the range 0-100 for numbers that are divisible by 5. 
+
+>> 1.  list_filter = filter(lambda x: x ** 5 == 0, y)
+
+>> On balance, it is split when to use a list comprehension and when the map/filter commands.  List Comprehensions are shorter to write and very clean, making them very efficient when creating simple lists, but as they iterate over an entire sequence, they can take a long time when the sequence is lengthy.  Map and Filter work faster but are not as clean and more complex to write.
+>> Set and dictionary comprehensions are simply extensions of list comprehensions and used when the end result required is a set or dictionary respectively.  Below are two simple examples:
+
+>> 1. #Create a Dictionary where x is the key and the value x squared.  
+>> 2. x = {x: x ** 2 for x in range(11)}
+>>
+>> 3. #Create a set where the sequence of numbers are unique with no dupes.
+>> 4. x = {s for s in '1233445568977'}
+
 
 ---
 
