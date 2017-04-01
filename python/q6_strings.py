@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0
 
 
-def donuts(count):
+#def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
@@ -18,10 +18,16 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+    def donuts(count):
+    if count < 10:
+        return("Number of donuts: {}".format(count))
+    else:
+        return("Number of donuts: many")
 
 
-def both_ends(s):
+#def both_ends(s):
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -37,10 +43,18 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+def both_ends(s):
+    if len(s) < 2:
+        return ('')
+    else:    
+        first_two = s[:2]
+        last_two = s[-2:]
+        return(first_two + last_two)
 
 
-def fix_start(s):
+#def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
     first char have been changed to '*', except do not change the
@@ -56,10 +70,18 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+def fix_start(s):
+    first_char = s[0]
+    new_str = s.replace(first_char, '*')
+    a = list(new_str)
+    a[0] = first_char
+    result = ''.join(a)
+    return result
 
 
-def mix_up(a, b):
+#def mix_up(a, b):
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
@@ -74,10 +96,18 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+
+def mix_up(a, b):
+    a_list = list(a)
+    b_list = list(b)
+    a_list[:2], b_list[:2] = b_list[:2], a_list[:2]
+    new_str_a = ''.join(a_list)
+    new_str_b = ''.join(b_list)
+    return (new_str_a + ' ' + new_str_b)
 
 
-def verbing(s):
+#def verbing(s):
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
     Unless it already ends in 'ing', in which case add 'ly' instead.
@@ -91,10 +121,18 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+def verbing(s):
+    if len(s) < 3:
+        return s
+    elif s[-3:] == 'ing':
+        return (s + 'ly')
+    else:
+        return (s + 'ing')
 
 
-def not_bad(s):
+#def not_bad(s):
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -111,10 +149,20 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+def not_bad(s):
+    a = s.find('not')
+    b = s.find('bad')
+    if b > a:
+        sub_string = s[s.find('not'):s.find('bad')] + 'bad'
+        result = s.replace(sub_string, 'good')
+        return result
+    else:
+        return s
 
 
-def front_back(a, b):
+#def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is
@@ -130,4 +178,13 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+def front_back(a, b):
+    half_a, rem_a = divmod(len(a), 2)
+    half_b, rem_b = divmod(len(b), 2)
+    a_front = a[:half_a + rem_a]
+    a_back = a[half_a + rem_a:]
+    b_front = b[:half_b + rem_b]
+    b_back = b[half_b + rem_b:]
+    return a_front + b_front + a_back + b_back
