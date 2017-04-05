@@ -49,4 +49,4 @@
     
 ![Hist](Combined_Numkid.tiff)
 
-##The data shows that there is a significant difference between the actual data on number of kids per household and the biased data when asking the children themselves how many are in their household.  The mean of the actual data is 1.024 while the mean from the biased data is 2.404.  The standard deviation of both distributions respectively are 1.18 and 1.08 leading to a Cohen Effect Statistic of -1.213, showing that the difference between the groups is 1.2 standard deviations, not a huge difference, but still over one standard deviation.
+The data shows that there is a significant difference between the actual data on number of kids per household and the biased data when asking the children themselves how many are in their household.  The mean of the actual data is 1.024 while the mean from the biased data is 2.404.  The standard deviation of both distributions respectively are 1.18 and 1.08 leading to a Cohen Effect Statistic of -1.213, showing that the difference between the groups is 1.2 standard deviations, not a huge difference, but still over one standard deviation.
