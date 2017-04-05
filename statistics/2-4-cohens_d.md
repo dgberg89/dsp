@@ -47,6 +47,6 @@
     print('The mean and Std of non-first babies\' weight is {:.3f} and {:.3f}.'.format(mean_two, std_two))
     print('The Cohen Effect Size is {:.4f}.'.format(cohen))
 
-##The results show that weights of first babies are 7.201 lbs with a standard deviation of 1.421 lbs and weights of other babies are 7.326 lbs with a standard deviation of 1.394 lbs.  The Cohen Effect Size is -.0887 standard deviations, which is small.  Conclusion is that weights of first babies are ever so slightly lower than those of non-first babies with the results have little statistical significance.
+The results show that weights of first babies are 7.201 lbs with a standard deviation of 1.421 lbs and weights of other babies are 7.326 lbs with a standard deviation of 1.394 lbs.  The Cohen Effect Size is -.0887 standard deviations, which is small.  Conclusion is that weights of first babies are ever so slightly lower than those of non-first babies with the results have little statistical significance.
 
-##Relative to the difference in pregnancy length between firsts and others, there is a slightly bigger difference in weight than in length.  The Cohen Effect Size for length is .0288 standard deviations, about 1/3 of the size of that for weight, but still very small overall.
+Relative to the difference in pregnancy length between firsts and others, there is a slightly bigger difference in weight than in length.  The Cohen Effect Size for length is .0288 standard deviations, about 1/3 of the size of that for weight, but still very small overall.
