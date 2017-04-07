@@ -84,7 +84,42 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Using Bayes' Theorem, knowing that Elvis had a twin brother, we can calculate the probability that Elvis was an identical >> twin and not a fraternal twin.  The known data is:
+
+>> Population probability of being a fraternal twin:  1/125
+>> Population probability of being an identical twin:  1/300
+>> Once being an fraternal twin is known, probability of being twin boys:  .5 * .5 = .25 (50% chance of being a boy or girl)
+>> Once being an identical twin is known, probability of being twin boys:  .5 (can only be BB or GG)
+
+>> Using Bayes Theorem, we can figure out the probability:
+>> P(Identical|Twin Boys) = (P(Identical) * P(Twin Boys|Identical)) / (P(Identical) * P(Twin Boys|Identical)) + (not Identical) * P(Twin Boys|Not Identical))
+>> Below is the Python Code to solve this and the final answer:
+
+    #Python code to figure out Elvis question/Bayes Theorem
+    #Assume chance of girl or boy being born is 50/50
+
+    prob_frat = 1 / 125
+    prob_id = 1 / 300
+
+    #if identical, prob of two boys = .5 (both have to be same sex so 50% identical girls, 50% identical boys)
+    prob_id_giventwins = .5
+
+    #if fraternal, prob of two boys = .25 (.5 first boy * .5 second boy)
+    prob_frat_giventwins = .5 * .5
+
+    #Calculate prob of Identical Twins|Given Twins using Bayes' Theorem
+    #prob_id_T = (prob(id) * prob(T|id)) / ((prob(id) * prob(T|id)) + (prob(not id) * prob(T|not id))
+
+    result = (prob_id_giventwins * prob_id) / ((prob_id_giventwins * prob_id) + (prob_frat * prob_frat_giventwins))
+
+    print('''Given that Elvis had a twin brother who died at birth, the chances that Elvis was an identical twin given
+    that the probabilities of fraternal twins are 1/125 and identical twins are 1/300 is {:.3f}.'''.format(result))```
+
+Given that Elvis had a twin brother who died at birth, the chances that Elvis was an identical twin given
+that the probabilities of fraternal twins are 1/125 and identical twins are 1/300 is 0.455.
+
+
+
 
 ---
 
